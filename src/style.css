@@ -6,19 +6,24 @@
 }
 
 .container {
-  background-color: rgb(240, 240, 240);
+  /* background-color: rgb(240, 240, 240); */
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .logo-container {
   display: flex;
   padding: 1rem 0;
+  flex-grow: auto;
+  background-color: #b6ad90;
 }
 
 .title {
   font-size: 4rem;
   flex-grow: 4;
 
-  color: rgb(7, 180, 122);
+  color: #414833;
   align-self: center;
   padding-left: 2rem;
   /* background: url('./icon.png'); */
@@ -33,8 +38,43 @@
 }
 
 .tab {
-  color: rgb(17, 122, 87);
+  color: #414833;
   font-size: 2rem;
 
   flex: 0 1 auto;
+}
+
+.main-content-container {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: flex-start;
+
+  flex-grow: 6;
+
+  margin-top: 8rem;
+}
+
+.welcome-text {
+  color: #333d29;
+  font-size: 7rem;
+}
+
+.short-desc {
+  color: #7f4f24;
+  font-size: 2rem;
+  margin: 2rem 20rem;
+  text-align: center;
+  justify-self: center;
+}
+
+.image {
+  height: 30rem;
+  width: 30rem;
+  /* background-color: blue; */
+}
+
+footer {
+  flex-grow: auto;
 }
