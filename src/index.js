@@ -1,4 +1,5 @@
 import _ from 'lodash';
+<<<<<<< HEAD
 import printMe from './print.js';
 
 function component() {
@@ -16,3 +17,12 @@ function component() {
 }
 
 document.body.appendChild(component());
+=======
+import './style.css';
+import Icon from './icon.png';
+import home from './pages/home.js';
+
+(function component() {
+  home();
+})();
+>>>>>>> master
