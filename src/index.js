@@ -1,5 +1,5 @@
 import _ from 'lodash';
-<<<<<<< HEAD
+HEAD
 import printMe from './print.js';
 
 function component() {
@@ -17,7 +17,7 @@ function component() {
 }
 
 document.body.appendChild(component());
-=======
+
 import './style.css';
 import Icon from './icon.png';
 import home from './pages/home.js';
@@ -25,4 +25,4 @@ import home from './pages/home.js';
 (function component() {
   home();
 })();
->>>>>>> master
+master
