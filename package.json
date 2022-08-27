@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "name": "webpack-demo",
-=======
   "name": "top_restaurant-page",
->>>>>>> master
   "version": "1.0.0",
   "description": "",
   "private": true,
@@ -11,29 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch",
     "start": "webpack serve --open",
-<<<<<<< HEAD
-    "server": "node server.js",
-=======
->>>>>>> master
     "build": "webpack"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-<<<<<<< HEAD
-  "dependencies": {
-    "lodash": "^4.17.21"
-  },
-  "devDependencies": {
-    "csv-loader": "^3.0.5",
-    "express": "^4.18.1",
-    "html-webpack-plugin": "^5.5.0",
-    "webpack": "^5.74.0",
-    "webpack-cli": "^4.10.0",
-    "webpack-dev-middleware": "^5.3.3",
-    "webpack-dev-server": "^4.10.0",
-    "yamljs": "^0.3.0"
-=======
   "devDependencies": {
     "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",
@@ -45,6 +23,5 @@
   "dependencies": {
     "lodash": "^4.17.21",
     "util": "^0.12.4"
->>>>>>> master
   }
 }
