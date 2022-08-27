@@ -1,4 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.container {
+  background-color: rgb(240, 240, 240);
+}
+
+.logo-container {
+  display: flex;
+  padding: 1rem 0;
+}
+
 .title {
+  font-size: 4rem;
+  flex-grow: 4;
+
   color: rgb(7, 180, 122);
+  align-self: center;
+  padding-left: 2rem;
   /* background: url('./icon.png'); */
+}
+.tabs-container {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-evenly;
+
+  font-size: 4rem;
+}
+
+.tab {
+  color: rgb(17, 122, 87);
+  font-size: 2rem;
+
+  flex: 0 1 auto;
 }
