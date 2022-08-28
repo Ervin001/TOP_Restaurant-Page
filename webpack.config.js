@@ -1,7 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
-
 module.exports = {
   mode: 'development',
   entry: {
@@ -26,7 +25,6 @@ module.exports = {
     clean: true,
 
     publicPath: '/',
-
   },
   optimization: {
     runtimeChunk: 'single',
@@ -42,6 +40,12 @@ module.exports = {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
       },
+      {
+        test: /\.tff$/i,
+        use: {
+          loader: 'url-loader',
+        },
+      },
     ],
   },
-}
+};
