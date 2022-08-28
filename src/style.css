@@ -131,7 +131,7 @@ button:hover {
 }
 
 footer {
-  flex-grow: 2;
+  flex-grow: 0.25;
   display: flex;
   flex-grow: auto;
   justify-content: center;
