@@ -66,6 +66,11 @@ body {
   color: antiquewhite;
 }
 
+.active:link,
+.active:visited {
+  color: antiquewhite;
+}
+
 .main-content-container {
   /* flex-grow: 1; */
   display: flex;
@@ -159,12 +164,31 @@ button:hover {
   gap: 3rem;
 }
 
+.header-contact-us {
+  font-size: 3rem;
+}
+
 .phone-container {
   display: flex;
+  /* justify-content: space-evenly; */
+  gap: 1rem;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  font-size: 3rem;
 }
 
 .address-container {
   display: flex;
+  /* justify-content: space-between; */
+  gap: 1rem;
+}
+
+.address-info {
+  flex-grow: 1;
 }
 
 .bl-b {
@@ -172,10 +196,42 @@ button:hover {
   border-top: #887e55 solid;
 }
 
+.menu-container {
+  display: flex;
+  justify-content: center;
+  flex-grow: 6;
+}
+
+.items-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 4rem;
+
+  height: 100%;
+  padding: 3rem 0;
+  width: 45rem;
+  background-color: #887e55;
+  border-radius: 10px;
+  overflow-x: auto;
+  overflow-y: scroll;
+  height: 60rem;
+}
+
+.item {
+  width: 30rem;
+  height: 16rem;
+  background-color: #414833;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
 footer {
   flex-grow: 0.25;
   display: flex;
   flex-grow: auto;
+  flex-shrink: 0;
   justify-content: center;
   align-items: center;
   font-size: 3rem;

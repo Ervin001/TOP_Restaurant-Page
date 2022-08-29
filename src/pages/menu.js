@@ -1,9 +1,12 @@
-const about = function () {
+const menu = function () {
   const containerEl = document.createElement('section');
   document.body.appendChild(containerEl);
+  // const myImage = new Image();
+  // myImage.src = MyImage;
+  // console.log(myImage);
 
   const html = `
-  <div class="container ">
+  <div class="container">
     <nav class="logo-container">
       <div class="title">Ozone</div>
       <div class="tabs-container">
@@ -13,21 +16,16 @@ const about = function () {
       </div>
     </nav>
 
-    <div class="about-us-container">
-      <div class="about-us-content">
-        <h1 class="header-contact-us">Contact Us</h1>
-        <div class="info-container">
-          <div class="phone-container">
-            <p class="phone-info">Phone Number:</p>
-            <p class="phone-number">(123) 456-7890</p>
-          </div>
-          <div class="address-container">
-            <p class="address-info">Address:</p>
-            <p class="address">123 Some Random St. City State</p>
-          </div>
+   <div class="menu-container">
+    <div class="items-container">
+      <div class="item">
+        <div class="food-image"></div>
+        <div class="food-info">
+          
         </div>
       </div>
     </div>
+   </div>
     
     <footer>
     <div class="footer-info bl-b">
@@ -42,4 +40,4 @@ const about = function () {
   containerEl.insertAdjacentHTML('beforeend', html);
 };
 
-export default about;
+export default menu;
