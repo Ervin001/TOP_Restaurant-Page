@@ -19,6 +19,16 @@ const about = function () {
     <div class="about-us-container">
       <div class="about-us-content">
         <h1 class="header-contact-us">Contact Us</h1>
+        <div class="info-container">
+          <div class="phone-container">
+            <p class="phone-info">Phone Number:</p>
+            <p class="phone-number">(123) 456-7890</p>
+          </div>
+          <div class="address-container">
+            <p class="address-info">Address:</p>
+            <p class="address">123 Some Random St. City State</p>
+          </div>
+        </div>
       </div>
     </div>
     
