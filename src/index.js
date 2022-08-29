@@ -1,10 +1,10 @@
 import _ from 'lodash';
 import './style.css';
 import home from './pages/home.js';
-import aboutUs from './pages/aboutUS.js';
+import about from './pages/aboutUs.js';
 
 (function component() {
   // home();
-  aboutUs();
+  about();
   // console.log(aboutUs());
 })();

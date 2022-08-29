@@ -13,6 +13,9 @@
   font-size: 62.5%;
   font-family: 'inter', sans-serif;
 }
+body {
+  background-color: #b6ad90;
+}
 
 .container {
   /* background-color: rgb(240, 240, 240); */
@@ -56,7 +59,7 @@
 .tab:link,
 .tab:visited {
   /* cursor: pointer; */
-  color: #000;
+  color: #414833;
 }
 
 .tab:hover {
@@ -128,6 +131,35 @@ button:hover {
   cursor: pointer;
   background-color: #887e55;
   color: #dcdad6;
+}
+
+/* About us page */
+
+.about-us-container {
+  flex-grow: 6;
+  display: grid;
+  grid-template-columns: 0.75fr 1fr 0.75fr;
+  grid-template-rows: 0.75fr 1fr 0.75fr;
+  grid-template-areas:
+    '... ... ...'
+    '... a ...'
+    '... ... ...';
+  background-color: #b6ad90;
+  border-top: #887e55 solid;
+}
+
+.about-us-content {
+  grid-area: a;
+  background-color: #887e55;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.bl-b {
+  border-bottom: #887e55 solid;
+  border-top: #887e55 solid;
 }
 
 footer {
