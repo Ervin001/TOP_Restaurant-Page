@@ -3,8 +3,20 @@
   font-style: normal;
   font-size: normal;
 
-  src: url('/src/resources/static/Inter-Medium.ttf');
+  src: url('/src/assets/static/Inter-Medium.ttf');
 }
+
+/*first image(burger)
+ Photo by <a href="https://unsplash.com/@briewilly?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Chad Montano</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+   */
+
+/*second image (pancakes) 
+   Photo by <a href="https://unsplash.com/@briewilly?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Chad Montano</a> on <a href="https://unsplash.com/s/photos/food?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+   */
+
+/* burger with knife 
+   Photo by <a href="https://unsplash.com/@cant89?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Davide Cantelli</a> on <a href="https://unsplash.com/s/photos/food?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+   */
 
 * {
   margin: 0;
@@ -30,6 +42,8 @@ body {
   flex-grow: auto;
   background-color: #b6ad90;
   width: 100%;
+  border-bottom: #414833 solid 1px;
+  margin-bottom: 0.5rem;
 }
 
 .title {
@@ -78,7 +92,7 @@ body {
   flex-grow: 6;
   padding-top: 6rem;
 
-  background: url('./resources/restaurant.JPG');
+  background: url('./assets/images/restaurant.jpg');
   background-size: cover;
   width: 100%;
 }
@@ -209,22 +223,49 @@ button:hover {
   justify-content: space-around;
   gap: 4rem;
 
-  height: 100%;
   padding: 3rem 0;
   width: 45rem;
   background-color: #887e55;
   border-radius: 10px;
-  overflow-x: auto;
-  overflow-y: scroll;
+  /* overflow-y: hidden; */
   height: 60rem;
 }
 
 .item {
-  width: 30rem;
+  display: flex;
+
   height: 16rem;
   background-color: #414833;
   border-radius: 10px;
-  flex-shrink: 0;
+  width: 34rem;
+}
+
+.food-image-container {
+}
+
+.food-img {
+  width: 16rem;
+  height: 16rem;
+
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  /* background: url('./assets/images/restaurant.JPG'); */
+}
+
+.food-info {
+  flex-grow: 4;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  margin-top: 2rem;
+  margin: 0 0.5rem;
+  font-size: 3.5rem;
+  color: white;
+}
+
+.food-desc {
+  font-size: 2rem;
 }
 
 footer {
