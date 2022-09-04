@@ -1,286 +1,57 @@
-@font-face {
-  font-family: 'inter';
-  font-style: normal;
-  font-size: normal;
-
-  src: url('/src/assets/static/Inter-Medium.ttf');
-}
-
-/*first image(burger)
- Photo by <a href="https://unsplash.com/@briewilly?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Chad Montano</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-   */
-
-/*second image (pancakes) 
-   Photo by <a href="https://unsplash.com/@briewilly?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Chad Montano</a> on <a href="https://unsplash.com/s/photos/food?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-   */
-
-/* burger with knife 
-   Photo by <a href="https://unsplash.com/@cant89?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Davide Cantelli</a> on <a href="https://unsplash.com/s/photos/food?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-   */
-
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
   font-size: 62.5%;
-  font-family: 'inter', sans-serif;
-}
-body {
-  background-color: #b6ad90;
 }
 
-.container {
-  /* background-color: rgb(240, 240, 240); */
+body {
+  background-color: #ffe8cc;
+}
+
+#content {
   display: flex;
   flex-direction: column;
+
   height: 100vh;
 }
 
-.logo-container {
-  display: flex;
-  padding: 1rem 0;
-  flex-grow: auto;
-  background-color: #b6ad90;
-  width: 100%;
-  border-bottom: #414833 solid 1px;
-  margin-bottom: 0.5rem;
+.main-container {
+  flex-grow: 0.5;
+  padding: 0 4rem;
 }
-
-.title {
-  font-size: 4rem;
-  flex-grow: 4;
-
-  color: #414833;
-  align-self: center;
-  padding-left: 2rem;
-}
-.tabs-container {
-  display: flex;
-  flex-grow: 1;
-  align-items: center;
-  justify-content: space-evenly;
-
-  font-size: 4rem;
-}
-
-.tab {
-  flex: 0 1 auto;
-
-  color: #414833;
-  font-size: 2rem;
-}
-
-.tab:link,
-.tab:visited {
-  /* cursor: pointer; */
-  color: #414833;
-}
-
-.tab:hover {
-  color: antiquewhite;
-}
-
-.active:link,
-.active:visited {
-  color: antiquewhite;
-}
-
-.main-content-container {
-  /* flex-grow: 1; */
-  display: flex;
-
+.main-container:nth-child(2) {
   flex-grow: 6;
-  padding-top: 6rem;
-
-  background: url('./assets/images/restaurant.jpg');
-  background-size: cover;
-  width: 100%;
+  background-color: #ffd8a8;
 }
 
-.content {
+.header {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  flex-grow: 6;
-  padding-top: 8rem;
+  color: #332b22;
 }
 
-.welcome-text {
-  color: rgb(226, 169, 105);
-  font-size: 7rem;
-  font-weight: 700;
-  text-shadow: #000 0px 0px 5px;
-}
-
-.info-btn {
-  display: flex;
-  flex-direction: column;
-
-  text-align: center;
-  justify-self: center;
-
-  color: #b6ad90;
-
-  font-size: 2rem;
-  margin: 2rem 15rem;
-  text-shadow: #000 0px 0px 5px;
-}
-
-.info {
-  font-size: 3rem;
-  font-weight: 600;
-}
-
-.btn-box {
-  justify-self: flex-end;
-}
-
-button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  font-size: 20px;
-  border: none;
-  border-radius: 6px;
-  background-color: #b6ad90;
-  color: #fff;
-}
-
-button:hover {
-  cursor: pointer;
-  background-color: #887e55;
-  color: #dcdad6;
-}
-
-/* About us page */
-
-.about-us-container {
-  flex-grow: 6;
-  display: grid;
-  grid-template-columns: 0.75fr 1fr 0.75fr;
-  grid-template-rows: 0.75fr 1fr 0.75fr;
-  grid-template-areas:
-    '... ... ...'
-    '... a ...'
-    '... ... ...';
-  background-color: #b6ad90;
-  border-top: #887e55 solid;
-}
-
-.about-us-content {
-  grid-area: a;
-  background-color: #887e55;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 3rem;
-  gap: 3rem;
-}
-
-.header-contact-us {
-  font-size: 3rem;
-}
-
-.phone-container {
-  display: flex;
-  /* justify-content: space-evenly; */
-  gap: 1rem;
-}
-
-.info-container {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  font-size: 3rem;
-}
-
-.address-container {
-  display: flex;
-  /* justify-content: space-between; */
-  gap: 1rem;
-}
-
-.address-info {
+.logo {
+  font-size: 4.5rem;
   flex-grow: 1;
 }
 
-.bl-b {
-  border-bottom: #887e55 solid;
-  border-top: #887e55 solid;
-}
-
-.menu-container {
+.links {
+  margin-left: auto;
   display: flex;
-  justify-content: center;
-  flex-grow: 6;
-}
-
-.items-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  gap: 4rem;
-
-  padding: 3rem 0;
-  width: 45rem;
-  background-color: #887e55;
-  border-radius: 10px;
-  /* overflow-y: hidden; */
-  height: 60rem;
-}
-
-.item {
-  display: flex;
-
-  height: 16rem;
-  background-color: #414833;
-  border-radius: 10px;
-  width: 34rem;
-}
-
-.food-image-container {
-}
-
-.food-img {
-  width: 16rem;
-  height: 16rem;
-
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  /* background: url('./assets/images/restaurant.JPG'); */
-}
-
-.food-info {
-  flex-grow: 4;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-
-  margin-top: 2rem;
-  margin: 0 0.5rem;
-  font-size: 3.5rem;
-  color: white;
-}
-
-.food-desc {
-  font-size: 2rem;
-}
-
-footer {
-  flex-grow: 0.25;
-  display: flex;
-  flex-grow: auto;
-  flex-shrink: 0;
-  justify-content: center;
-  align-items: center;
+  list-style: none;
+  gap: 1.3rem;
   font-size: 3rem;
-  background-color: #b6ad90;
-  color: #414833;
+  font-weight: 800;
 }
 
-strong {
-  font-size: 800;
-  text-align: center;
+a:link,
+a:visited {
+  color: #332b22;
+}
+
+a:hover,
+a:active {
+  color: #1c3434;
+  transition: all 0.3s;
 }
