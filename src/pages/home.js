@@ -18,8 +18,16 @@ export default function homePagefunc() {
         </ul>
       </div>
     </div>
-    <div class="home-content main-container">Main content here</div>
-    <div class="footer main-container">This is the footer</div>
+
+    <div class="home-content main-container">
+      <div class="home-info-container">
+        Here is where the Box will go
+      </div>
+    </div
+    
+    <div class="footer main-container">
+      <div class="created-by">Created by Ervin001</div>
+    </div>
   `;
 
   contentEl.insertAdjacentHTML('beforeend', html);
