@@ -21,13 +21,16 @@ export default function homePagefunc() {
 
     <div class="home-content main-container">
       <div class="home-info-container">
-        Here is where the Box will go
+        <div class="text-button-container">
+          <div class="text">The comfort you crave</div>
+          <button class="to-menu-button">Order now</button>
+        </div>
       </div>
-    </div
-    
-    <div class="footer main-container">
-      <div class="created-by">Created by Ervin001</div>
     </div>
+    
+    <footer class="footer main-container">
+      <div class="created-by">Created by Ervin001</div>
+    </footer>
   `;
 
   contentEl.insertAdjacentHTML('beforeend', html);

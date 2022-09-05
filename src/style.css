@@ -20,9 +20,10 @@ body {
   flex-grow: 0.5;
   padding: 0 4rem;
 }
+
 .main-container:nth-child(2) {
   flex-grow: 6;
-  background-color: #ffd8a8;
+  /* background-color: #ffd8a8; */
 }
 
 /***************/
@@ -32,6 +33,7 @@ body {
   display: flex;
   align-items: center;
   color: #332b22;
+  border-bottom: #1c3434 solid 1px;
 }
 
 .logo {
@@ -68,13 +70,73 @@ a:active {
 /***************/
 
 .home-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   background-image: url('./assets/jakub-kapusnak.jpg');
   background-size: cover;
+}
+
+.home-info-container {
+  /* display: flex; */
+}
+
+.text-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  font-size: 8rem;
+  color: white;
+  text-shadow: 0px 0px 9px black;
+}
+
+.to-menu-button {
+  font-size: 2.3rem;
+  padding: 1.8rem 4rem;
+  border: none;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+/***************/
+/* About us page */
+/***************/
+
+.aboutUs-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutUs {
+  display: flex;
+  flex-direction: column;
+  width: 80rem;
+  height: 50rem;
+  border-radius: 4px;
+  background-color: #e6c297;
+  padding: 1rem 2rem;
+}
+
+.contactUs {
+  align-self: center;
+  font-size: 6rem;
+}
+
+.information {
+  font-style: italic;
+  font-size: 2rem;
 }
 
 /***************/
 /* Footer */
 /***************/
+
 .footer {
   display: flex;
   align-items: center;
