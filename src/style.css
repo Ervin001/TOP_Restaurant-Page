@@ -116,6 +116,8 @@ a:active {
 .aboutUs {
   display: flex;
   flex-direction: column;
+  gap: 4rem;
+
   width: 80rem;
   height: 50rem;
   border-radius: 4px;
@@ -131,6 +133,46 @@ a:active {
 .information {
   font-style: italic;
   font-size: 2rem;
+}
+
+/***************/
+/* Menu */
+/***************/
+
+.menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-menu-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  justify-content: space-evenly;
+
+  border-radius: 4px;
+  height: 60rem;
+  width: 80rem;
+  background-color: #998265;
+  overflow: hidden;
+}
+
+.item-container {
+  display: flex;
+
+  border-radius: 4px;
+  margin: 0 2rem;
+  background-color: #1c3434;
+  font-size: 12rem;
+}
+
+.item-img {
+  flex-grow: 1;
+}
+
+.item {
+  flex-grow: 6;
 }
 
 /***************/
