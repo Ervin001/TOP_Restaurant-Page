@@ -15,18 +15,42 @@ const headerContentEl = document.querySelector('.header');
 // headerContentEl.insertAdjacentHTML('afterend', menuFunc());
 
 const linksEl = document.querySelectorAll('.links');
+const menuBtn = document.querySelector('.to-menu-button');
+const logoEl = document.querySelector('.logo');
 
 linksEl.forEach((btn) => {
-  const secondChild = contentEl.children[1];
   btn.addEventListener('click', (e) => {
     // console.log(e.target.innerText);
     if (e.target.innerText === 'Menu') {
+      let secondChild = contentEl.children[1];
+      secondChild.remove();
       headerContentEl.insertAdjacentHTML('afterend', menuFunc());
     } else if (e.target.innerText === 'About Us') {
+      let secondChild = contentEl.children[1];
+      secondChild.remove();
       headerContentEl.insertAdjacentHTML('afterend', aboutUsFunc());
     } else if (e.target.innerText === 'Home') {
+      let secondChild = contentEl.children[1];
+
       secondChild.remove();
       headerContentEl.insertAdjacentHTML('afterend', homePagefunc());
     }
   });
+});
+
+menuBtn.addEventListener('click', (e) => {
+  if (e.target.innerText === 'Order Now') {
+    let secondChild = contentEl.children[1];
+    secondChild.remove();
+    headerContentEl.insertAdjacentHTML('afterend', menuFunc());
+  }
+});
+
+logoEl.addEventListener('click', (e) => {
+  if (e.target.innerText === 'Ozone') {
+    let secondChild = contentEl.children[1];
+
+    secondChild.remove();
+    headerContentEl.insertAdjacentHTML('afterend', homePagefunc());
+  }
 });
