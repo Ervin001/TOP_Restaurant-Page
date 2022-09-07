@@ -155,7 +155,6 @@ a:active {
   height: 60rem;
   width: 80rem;
   background-color: #998265;
-  overflow: hidden;
 }
 
 .item-container {
@@ -165,14 +164,23 @@ a:active {
   margin: 0 2rem;
   background-color: #1c3434;
   font-size: 12rem;
+  height: 16rem;
+  overflow: hidden;
 }
 
 .item-img {
-  flex-grow: 1;
+  /* flex-grow: 1; */
+  width: 12rem;
+}
+
+img {
+  height: 100%;
+  width: 100%;
 }
 
 .item {
   flex-grow: 6;
+  font-size: 2rem;
 }
 
 /***************/
