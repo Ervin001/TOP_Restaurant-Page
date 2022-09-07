@@ -181,6 +181,7 @@ img {
 .item {
   flex-grow: 6;
   font-size: 2rem;
+  color: #ffdcb1;
 }
 
 /***************/

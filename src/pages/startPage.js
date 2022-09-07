@@ -1,4 +1,4 @@
-export default function homePagefunc() {
+export default function startPageFunc() {
   const contentEl = document.querySelector('#content');
 
   let html = `
